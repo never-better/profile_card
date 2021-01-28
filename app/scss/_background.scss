@@ -1,0 +1,112 @@
+.background{
+
+
+  &__top{
+    width: 61.125rem;
+    height: 61.125rem;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -35.75rem;
+    left: -49.40625rem;
+
+    @include breakpoint-up(desktop){
+      top: -34.25rem;
+      left: -17.875rem;
+    }
+  }
+
+  &__bottom{
+    width: 61.125rem;
+    height: 61.125rem;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -35.75rem;
+    right: -49.40625rem;
+
+    @include breakpoint-up(desktop){
+      bottom: -34.25rem;
+      right: -17.875rem;
+    }
+  }
+}
+
+
+
+
+.card{
+
+  min-width: 20.625rem;
+  height: 23.75rem;
+  background-color: $white;
+  z-index: 1;
+
+  border-radius: 1rem;
+
+  &__pattern{
+    background-image: url(/images/bg-pattern-card.svg);
+    width: 100%;
+    height: 35%;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  &__image{
+    transform: translate(100%, -50%);
+    width: 6.25rem;
+    height: 6.25rem;
+    background-image: url(/images/image-victor.jpg);
+    border: 5px solid $white;
+    border-radius: 50%;
+  }
+
+
+  &__info{
+    transform: translateY(-2.25rem);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $Darkgray;
+
+    .name{
+      font-weight: 700;
+    }
+
+    .age{
+      color: $Darkgray;
+    }
+    .address{
+      display: block;
+      padding-top: 0.5rem;
+      color: $Darkgray;
+    }
+  }
+
+  &__follower{
+    padding: 0 3rem;
+
+    transform: translateY(-2.5rem);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .info{
+
+      &__number{
+        margin-top: 1.75rem;
+        margin-bottom: 0;
+
+        font-weight: 700;
+      }
+      
+      &__list{
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        color: $Darkgray;
+      }
+    }
+  }
+
+}
+
