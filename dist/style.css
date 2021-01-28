@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Kumbh Sans;
+  src: url(https://fonts.google.com/specimen/Kumbh+Sans);
+}
+
 body {
   position: fixed;
   background-color: #19a2ae;
@@ -55,6 +60,7 @@ body {
   height: 23.75rem;
   background-color: white;
   z-index: 1;
+  font-family: "Kumbh Sans", sans-serif;
   border-radius: 1rem;
 }
 
